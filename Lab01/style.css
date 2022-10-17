@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+nav:hover {
+    color: #F1F2EB;
+}
+i:hover{
+    font-size: 50px;   
+}
+i{
+    color: #040a1f;
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(10);
+    grid-template-rows: repeat(9);
+    gap: 2px;
+    border-radius: 10px;
+    /* background: url(../images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg) center center; */
+    background-color:black;
+    background-size: contain;
+}
+#headerSpace1{
+    justify-content:space-evenly;
+}
+
+nav {
+    border: 2px solid black;
+    background-color: #48A9A6;
+    grid-column: 1/10;
+    grid-row: 1/2;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Bebas Neue', cursive;
+    padding: 10px;
+}
+
+#about1 {
+    background-color: #017083;
+    grid-column: 1/10;
+    grid-row: 2/4;
+    border: 2px solid black;
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bold;
+    font-size: larger;     
+}
+aside{
+    font-weight: lighter;
+}
+
+#homeimage1 {
+    grid-column: 1/10;
+    grid-row: 4/7;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.imgitem {
+    grid-column: 1/10;
+    grid-row: 7/8;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: left;
+    flex-basis: 33.33%;
+    box-sizing: border-box;
+    float: left;
+}
+
+/* .imgitem img{
+    width: 100%;
+    text-align: left;
+} */
+.item {
+    grid-column: 1/10;
+    grid-row: 7/8;
+    border: 1px;
+    border-radius: 5px;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+img {
+    height: 180px;
+    width: 48vw;
+    object-fit: fill;
+    border-radius: 5px;
+    gap: 5px;
+    display: flex;
+    /* text-align: left; */
+}
+
+footer {
+    grid-column: 1/10;
+    grid-row: 8/9;
+    border: 2px solid black;
+    background-color: #48A9A6;
+    text-align: right;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+/*/////////////////////
+resume
+//////////////////////////*/
+.rPsummary, .rName{
+    text-align: center;
+    font-weight: bolder;
+}
+summary{
+    font-weight: lighter;
+}
+.rExperience, .rEducation, .rCert, .rVol{
+    text-align: center;
+    font-weight: bolder;
+}
+.date{
+    font-weight: smaller;
+    color: grey;
+}
+
+/*/////////////////////
+contact
+//////////////////////////*/
+#liImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 140px;
+    height: 140px;
+}
+.linkedin{
+    text-align: center;
+}
+.pEmail{
+    text-align: center;
+}
+#emailPos{
+    text-align: center;
+}
+/*/////////////////////
+portfolio
+//////////////////////////*/
+#imgPort{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 250px;
+}
+.centerPort{
+    text-align: center;
+}
+
+/*/////////////////////
+desktop
+//////////////////////////*/
+@media screen and (min-width: 800px)
+{
+    .container1 {
+        display: grid;
+        grid-template-columns: repeat(10);
+        grid-template-rows: repeat(9);
+        gap: 2px;
+        border-radius: 10px;
+        background: url(./images/umberto-jXd2FSvcRr8-unsplash.jpg) center center;
+        background-size: contain;
+    }
+    .secStyle{
+        background-color: #abdbe3;
+        border-radius: 5px;
+    }
+    .rExperience, .rEducation, .rCert, .rVol{
+        text-align: left;
+        font-weight: bolder;
+    }
+    #imgPort{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        height: auto;
+    }
+    .contBod{
+        background-color: #abdbe3; 
+    }
+   .rPsummary{
+    text-align: left;
+   }
+}
